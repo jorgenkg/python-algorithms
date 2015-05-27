@@ -2,14 +2,14 @@
 
 objects = [
     #(cost,weight,object)
-    (1,4,[None]),
-    (4,5,[None]),
-    (3,8,[None]),
-    (7,3,[None]),
-    (4,30,[None]),
-    (2,1,[None]),
-    (8,8,[None]),
-    (12,2,[None]),
+    (1,4, ["a"]),
+    (4,5, ["b"]),
+    (3,8, ["c"]),
+    (7,3, ["d"]),
+    (4,30,["e"]),
+    (2,1, ["f"]),
+    (8,8, ["g"]),
+    (12,2,["h"]),
 ]
 
 def DP_KP( S, limit=200 ):
@@ -25,4 +25,4 @@ def DP_KP( S, limit=200 ):
         TRIPLE.extend(new.values())
     return TRIPLE
 
-print DP_KP( objects, 56 )[-1] # highest value for weight limit
+print DP_KP( objects, 24 )[-1] # highest value for weight limit
